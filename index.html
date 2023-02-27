@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timer App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <link rel="stylesheet" href="style.css">
+  <body>
+    <h1>My Timer</h1>
+    <h2>Enter start time</h2>
+    <div oninput="displaymin()">
+      <input type="number" id="hours" min="0" max="24" placeholder="hrs" />:  
+      <input type="number" id="minutes" min="0" max="59" placeholder="mins" /> :
+      <input type="number" id="seconds" min="0" max="59" placeholder="secs" />
+    </div>
+    <div id="display"></div>
+    <div>
+      <button id="start" onclick="watch()">Start</button>
+    </div>
+    <script src="index.js"></script>    
+  </body>
+</html>
